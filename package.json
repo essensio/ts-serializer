@@ -1,0 +1,21 @@
+{
+  "name": "@essensio/serializer",
+  "version": "0.0.1",
+  "description": "Сериализатор литералов нотации Essensio: AST-литерал ⇄ JSON (значение и строка). Поверх AST движка essensio/ts-engine.",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "test": "node --import tsx --test tests/*.test.ts",
+    "typecheck": "tsc"
+  },
+  "dependencies": {
+    "@essensio/engine": "github:essensio/ts-engine"
+  },
+  "devDependencies": {
+    "@types/node": "^26.0.0",
+    "tsx": "^4.22.4",
+    "typescript": "^6.0.3"
+  }
+}
